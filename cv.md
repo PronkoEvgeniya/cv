@@ -1,5 +1,3 @@
-# rss-school CV
-
 ## 1. Eugeniya Pronko, Minsk
 
 ## 2. Contacts
