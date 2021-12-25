@@ -18,48 +18,125 @@
     <main class="main">
         <section class="section__left">
             <div class="section__name">
-                <p class="name__name">Eugeniya Pronko</p>
+                <h1 class="name__name">Eugeniya Pronko</h1>
                 <div class="name__inner">
                     <p class="name__position">Junior frontend developer</p>
                 </div>
             </div>
 
             <div class="section__experience">
-                <div class="exp__title">
                     <div class="section__title">
                         <div class="icon">
                             <i class="fas fa-briefcase"></i>
                         </div>
-                        <p class="title-text">Experience</p>
+                        <h2 class="title-text">Experience</h2>
                     </div>
-                </div>    
                 <div class="exp__content">
-                    <a href="https://pronkoevgeniya.github.io/MoGo_fin/">
+                    <a href="https://pronkoevgeniya.github.io/MoGo_fin/" title="Click to view" target="blank">
                         <img src="img/kvast_scr.png" alt="MoGo">
                     </a>
-                    <a href="https://pronkoevgeniya.github.io/kvast/">
+                    <a href="https://pronkoevgeniya.github.io/kvast/"  title="Click to view" target="blank">
                         <img src="img/mogo_scr.png" alt="Kvast">
                     </a>
                 </div>
             </div>
 
             <div class="section__education">
-                <i class="fas fa-user-graduate"></i>
+                <div class="section__title">
+                    <div class="icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h2 class="title-text">Education</h2>
+                </div>
+                <div class="educ__content">
+                    <a href="https://rs.school/js/" target="blank">RSSchool stage0 <i>in process</i></a>
+                    <a href="https://htmlacademy.ru" target="blank">Htmlacademy</a>
+                    <a href="https://ru.code-basics.com/languages/html" target="blank">Code basics HTML</a>
+                    <a href="https://ru.code-basics.com/languages/css" target="blank">Code basics CSS</a>
+                    <a href="https://ru.code-basics.com/languages/javascript" target="blank">Code basics JS <i>in process</i></a>
+                </div>
             </div>
-            <div class="section__code-samples">
-                <i class="fab fa-js"></i>
-            </div>
-            <div class="section__language">
-                <i class="fas fa-language"></i>
 
+            <div class="section__code-samples">
+                <div class="section__title">
+                    <div class="icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h2 class="title-text">Code sample</h2>
+                </div>
+                <div class="code__content">
+                    <code>
+                        <b>let</b> incomeTax = 13;<br>
+                        <b>let</b> contributions = 30;<br><br>
+
+                        <b>let</b> calculateExpenses = <b>function</b> (netSalary){<br><br>
+                        
+                            &nbsp;&nbsp;<b>let</b> dirtSalary = Math.round(netSalary  / (100 - incomeTax) * 100);<br>
+                            &nbsp;&nbsp;<b>let</b> ndfl = Math.round(dirtSalary * contributions / 100 );<br>
+                            &nbsp;&nbsp;<b>let</b> sum = Math.round(ndfl + dirtSalary);<br>
+                        <b>return</b> sum <br>
+                        }
+                    </code>
+                </div>
+            </div>
+
+            <div class="section__language">
+                <div class="section__title">
+                    <div class="icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h2 class="title-text">Language</h2>
+                </div>
+                <div class="lang__content">
+                    <p>
+                        Belarusian <i>native</i><br>
+                        Rusian <i>native</i><br>
+                        English <i>beginner</i>
+                    </p>
+                </div>
             </div>
         </section>
+
         <section class="section__right">
             <div class="section__about-me">
-                <i class="far fa-user"></i>
+                <div class="about-me__photo">
+                    <a href="#">
+                        <img src="img/avatar.jpeg" alt="Avatar" width="250" height="250">
+                    </a>
+                </div>
+                <div class="about-me__content">
+                    <div class="about__header">
+                        <div class="about__icon">
+                            <i class="far fa-user"></i>
+                        </div> 
+                        <div class="about__title">
+                            <span>About me</span>
+                        </div>
+                    </div>
+                    <div class="about__text">
+                        <p>
+                            My working experience is 5 years in veterinary medicine and retail trade. In September 21, I began to independently study the basics of layout and development in javaScript.  I'm interested in graphic design and tech, so I chosed a digital specialty for myself. Now my goal is getting my first job as a position front-end developer.
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="section__skills">
-
+                <div class="right__header">
+                    <div class="right__icon">
+                        <i class="far fa-lightbulb"></i>
+                    </div>
+                    <div class="right__title">
+                        <span>Skills</span>
+                    </div>
+                </div>
+                <div class="skills__content">
+                    <ul>
+                        <li><a href="#">html</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">javascript</a></li>
+                        <li><a href="#">git</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="section__contacts">
                 <i class="far fa-id-badge"></i>
