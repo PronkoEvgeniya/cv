@@ -11,13 +11,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&family=Roboto&display=swap" rel="stylesheet">
     <title>CV Pronko Evgeniya</title>
 </head>
-<body>
-    <header class="header">
 
+<body>
+
+    <header class="header">
+        <nav class="navigation">
+            <ul class="nav-content">
+                <li><a class="nav-link" href="#experience">Experience</a></li>
+                <li><a class="nav-link" href="#education">Education</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#contacts">Contacts</a></li>
+                <li><a class="nav-link" href="#code_sample">Code sample</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="main">
+
         <section class="section__left">
+
             <div class="section__name">
                 <h1 class="name__name">Eugeniya Pronko</h1>
                 <div class="name__inner">
@@ -25,7 +37,7 @@
                 </div>
             </div>
 
-            <div class="section__experience">
+            <div id="experience" class="section__experience">
                     <div class="section__title">
                         <div class="icon">
                             <i class="fas fa-briefcase"></i>
@@ -42,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="section__education">
+            <div id="education" class="section__education">
                 <div class="section__title">
                     <div class="icon">
                         <i class="fas fa-user-graduate"></i>
@@ -58,7 +70,7 @@
                 </div>
             </div>
 
-            <div class="section__code-samples">
+            <div id="code_sample" class="section__code-samples">
                 <div class="section__title">
                     <div class="icon">
                         <i class="fab fa-js"></i>
@@ -84,6 +96,7 @@
         </section>
 
         <section class="section__right">
+
             <div class="section__about-me">
                 <div class="about-me__photo">
                     <a href="#">
@@ -106,7 +119,8 @@
                     </div>
                 </div>
             </div>
-            <div class="section__skills">
+
+            <div id="skills" class="section__skills">
                 <div class="right__header">
                     <div class="right__icon">
                         <i class="far fa-lightbulb"></i>
@@ -124,7 +138,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="section__contacts">
+
+            <div id="contacts" class="section__contacts">
                 <div class="right__header">
                     <div class="right__icon">
                         <i class="far fa-id-badge"></i>
@@ -141,7 +156,6 @@
                         <li><a href="https://t.me/eugeniyapronko" target="blank">Telegram</a></li>
                     </ul>
                 </div>
-
             </div>
 
             <div class="section__language">
@@ -161,15 +175,23 @@
             </div>
 
         </section>
+
     </main>
 
     <footer>
         <div class="footer__content">
-            <a class="footer-github" href="https://github.com/PronkoEvgeniya" target="blank" title="Link to my GitHub"><i class="fab fa-github"></i></a>
-            <a class="footer-year" href="#">Minsk, 2021</a>
-            <a class="footer-rss" href="https://rs.school/js/">RSSchool</a>
+            <div class="footer__container">
+                <a class="footer-github" href="https://github.com/PronkoEvgeniya" target="blank" title="Link to my GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="footer__container">
+                <a class="footer-year" href="#">Minsk, 2021</a>
+            </div>
+            <div class="footer__container">
+                <a class="footer-rss" href="https://rs.school/js/"><img src="img/rs_school_js.svg" alt="logo" width="80" height="29"></a>
+            </div>
         </div>
     </footer>
+    
     <script src="https://kit.fontawesome.com/203648b129.js" crossorigin="anonymous"></script>
 </body>
 </html>
