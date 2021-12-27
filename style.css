@@ -151,14 +151,6 @@ body {
     background-color: #b5dbe2c2;
 }
 
-.lang__content {
-    max-width: 60%;
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    line-height: 40px;
-    color: #685c53
-}
 /* RIGHT */
 .section__right {
     min-width: 40%;
@@ -256,6 +248,7 @@ body {
     padding: 0;
     font-size: 32px;
     color: #f6f5f5;
+   
 }
 
 .skills__content li a {
@@ -266,6 +259,34 @@ body {
     font-size: 20px;
 }
 
+.skills__content li a:hover {
+    color:#b38e35;
+
+}
 .skills__content li {
+    padding: 13px 0;
+    text-align: center;
     list-style-type: none;
+}
+
+.lang__content {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+    color: #f6f5f5;
+}
+
+.footer__content {
+    max-width: 100%;
+    min-height: 50px;
+    background-color: #685c53;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-github {
+    color: #1b1b19;
+    font-size: 30px;
 }
