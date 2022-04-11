@@ -5,193 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
     <title>CV Pronko Evgeniya</title>
 </head>
-
 <body>
-
-    <header class="header">
-        <nav class="navigation">
-            <ul class="nav-content">
-                <li><a class="nav-link" href="#experience">Experience</a></li>
-                <li><a class="nav-link" href="#education">Education</a></li>
-                <li><a class="nav-link" href="#skills">Skills</a></li>
-                <li><a class="nav-link" href="#contacts">Contacts</a></li>
-                <li><a class="nav-link" href="#code_sample">Code sample</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="main">
-
-        <section class="section__left">
-
-            <div class="section__name">
-                <h1 class="name__name">Eugeniya Pronko</h1>
-                <div class="name__inner">
-                    <p class="name__position">Junior frontend developer</p>
-                </div>
+    <main>
+        <section class="left-column">
+            <div class="avatar">
+                <img src="./assets/avatar.jpeg" alt="">
             </div>
-
-            <div id="experience" class="section__experience">
-                    <div class="section__title">
-                        <div class="icon">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <h2 class="title-text">Experience</h2>
-                    </div>
-                <div class="exp__content">
-                    <a href="https://pronkoevgeniya.github.io/MoGo_fin/" title="Click to view" target="blank">
-                        <img src="img/kvast_scr.png" alt="MoGo">
-                    </a>
-                    <a href="https://pronkoevgeniya.github.io/kvast/"  title="Click to view" target="blank">
-                        <img src="img/mogo_scr.png" alt="Kvast">
-                    </a>
-                </div>
+            <div class="contacts">
+                <h2 class="title" data-i18n="contacts">Contacts</h2>
+                <a href="tel:+375336751465">
+                    <li>+375336751465</li>
+                </a>
+                <a href="mailto:shreidereva@gmail.com">
+                    <li>shreidereva@gmail.com</li>
+                </a>
+                <span data-i18n="minsk">Minsk</span>
             </div>
-
-            <div id="education" class="section__education">
-                <div class="section__title">
-                    <div class="icon">
-                        <i class="fas fa-user-graduate"></i>
-                    </div>
-                    <h2 class="title-text">Education</h2>
-                </div>
-                <div class="educ__content">
-                    <a href="https://rs.school/js/" target="blank">RSSchool stage0 <i>in process</i></a>
-                    <a href="https://htmlacademy.ru" target="blank">Htmlacademy</a>
-                    <a href="https://ru.code-basics.com/languages/html" target="blank">Code basics HTML</a>
-                    <a href="https://ru.code-basics.com/languages/css" target="blank">Code basics CSS</a>
-                    <a href="https://ru.code-basics.com/languages/javascript" target="blank">Code basics JS <i>in process</i></a>
-                </div>
+            <div class="skills">
+                <h2 class="title" data-i18n="skills">Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SASS</li>
+                    <li>JavaScript</li>
+                    <li>GIT</li>
+                    <li>Figma</li>
+                    <li>Photoshop</li>
+                </ul>
             </div>
-
-            <div id="code_sample" class="section__code-samples">
-                <div class="section__title">
-                    <div class="icon">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <h2 class="title-text">Code sample</h2>
-                </div>
-                <div class="code__content">
-                    <code>
-                        <b>let</b> incomeTax = 13;<br>
-                        <b>let</b> contributions = 30;<br><br>
-
-                        <b>let</b> calculateExpenses = <b>function</b> (netSalary){<br><br>
-                        
-                            &nbsp;&nbsp;<b>let</b> dirtSalary = Math.round(netSalary  / (100 - incomeTax) * 100);<br>
-                            &nbsp;&nbsp;<b>let</b> ndfl = Math.round(dirtSalary * contributions / 100 );<br>
-                            &nbsp;&nbsp;<b>let</b> sum = Math.round(ndfl + dirtSalary);<br>
-                        <b>return</b> sum <br>
-                        }
-                    </code>
-                </div>
-            </div>
-
         </section>
-
-        <section class="section__right">
-
-            <div class="section__about-me">
-                <div class="about-me__photo">
-                    <a href="#">
-                        <img src="img/avatar.jpeg" alt="Avatar" width="250" height="250">
-                    </a>
-                </div>
-                <div class="about-me__content">
-                    <div class="about__header">
-                        <div class="about__icon">
-                            <i class="far fa-user"></i>
-                        </div> 
-                        <div class="about__title">
-                            <span>About me</span>
-                        </div>
-                    </div>
-                    <div class="about__text">
-                        <p>
-                            My working experience is 5 years in veterinary medicine and retail trade. In September 21, I began to independently study the basics of layout and development in javaScript.  I'm interested in graphic design and tech, so I chosed a digital specialty for myself. Now my goal is getting my first job as a position front-end developer.
-                        </p>
-                    </div>
-                </div>
+        <section class="right-column">
+            <button class="lang ru-lang">ru</button>
+            <div class="name">
+                <h1 data-i18n="name">Eugeniya Pronko</h1>
+                <span>Junior frontend developer</span>
             </div>
-
-            <div id="skills" class="section__skills">
-                <div class="right__header">
-                    <div class="right__icon">
-                        <i class="far fa-lightbulb"></i>
-                    </div>
-                    <div class="right__title">
-                        <span>Skills</span>
-                    </div>
-                </div>
-                <div class="skills__content">
-                    <ul>
-                        <li><a href="#">html</a></li>
-                        <li><a href="#">css</a></li>
-                        <li><a href="#">javascript</a></li>
-                        <li><a href="#">git</a></li>
-                    </ul>
-                </div>
+            <div class="about">
+                <h2 class="title" data-i18n="about">About me</h2>
+                <p data-i18n="about-me">My working experience is 5 years in veterinary medicine and retail trade. 
+                    In September 21, I began to independently study the basics of layout and development 
+                    in javaScript.  I'm interested in graphic design and tech, so I chosed a digital 
+                    specialty for myself. Now my goal is getting my first job as a position front-end 
+                    developer.</p>
             </div>
-
-            <div id="contacts" class="section__contacts">
-                <div class="right__header">
-                    <div class="right__icon">
-                        <i class="far fa-id-badge"></i>
-                    </div>
-                    <div class="right__title">
-                        <span>Contacts</span>
-                    </div>
-                </div>
-                <div class="skills__content">
-                    <ul>
-                        <li><a href="https://github.com/PronkoEvgeniya" target="blank">Github</a></li>
-                        <li><a href="https://linkedin.com/in/eugeniyapronko/" target="blank">LinkedIn</a></li>
-                        <li><a href="mailto:Shreidereva@gmail.com" target="blank">Email</a></li>
-                        <li><a href="https://t.me/eugeniyapronko" target="blank">Telegram</a></li>
-                    </ul>
-                </div>
+            <div class="education">
+                <h2 class="title" data-i18n="educ">Education</h2>
+                <span>HTML academy <i>2021</i></span>
+                <span>Code basics <i>2021</i></span>
+                <a href="https://app.rs.school/certificate/iumpf7x4" target="_blank">RSSchool <i>2021-2022</i></a>
             </div>
-
-            <div class="section__language">
-                <div class="right__header">
-                    <div class="right__icon">
-                        <i class="fas fa-language"></i>
-                    </div>
-                    <h2 class="right__title">Language</h2>
-                </div>
-                <div class="lang__content">
-                    <p>
-                        Belarusian <i>native</i><br>
-                        Rusian <i>native</i><br>
-                        English <i>beginner</i>
-                    </p>
-                </div>
+            <div class="exp">
+                <a href="./exp/exp.html">
+                    <h2 class="title" data-i18n="portfolio">Portfolio</h2>    
+                </a>
             </div>
-
         </section>
-
     </main>
-
-    <footer>
-        <div class="footer__content">
-            <div class="footer__container">
-                <a class="footer-github" href="https://github.com/PronkoEvgeniya" target="blank" title="Link to my GitHub"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="footer__container">
-                <a class="footer-year" href="#">Minsk, 2021</a>
-            </div>
-            <div class="footer__container">
-                <a class="footer-rss" href="https://rs.school/js/"><img src="img/rs_school_js.svg" alt="logo" width="80" height="29"></a>
-            </div>
-        </div>
-    </footer>
-    
-    <script src="https://kit.fontawesome.com/203648b129.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>
