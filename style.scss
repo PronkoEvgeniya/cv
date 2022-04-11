@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,200&display=swap');
+
+$white: #CECECE;
+$rose: #B87D7E;
+$gray: #636363;
+$gray-light: #A8A8A8;
+$titillium: 'Titillium Web', sans-serif;
+
+body {
+    background: linear-gradient(180deg, #cecece7e 50%, #b87d7e73 50%); 
+}
+
+main {
+    max-width: 834px;
+    box-shadow: -7px 7px 15px 9px rgba(71, 71, 71, 0.7);
+    border-radius: 20px;
+    margin: 0 auto;
+    background: url(./assets/back.jpg);
+    display: flex;
+    font-family: $titillium;
+    color: $gray;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 0.06em;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    position: relative;
+   &::after {
+       content: "";
+       position: absolute;
+       width: 60%;
+       height: 2px;
+       background-color: $gray;
+       opacity: .5;
+       bottom: 0;
+       left: 20%;
+   }
+}
+
+.left-column {
+    div {
+        width: 316px;
+        margin-bottom: 40px;
+    }
+    img {
+        display: block;
+        margin: 130px auto 0;
+        max-width: 220px;
+        border-radius: 100%;
+        border: 2px solid $gray;
+    }
+    .contacts {
+        a {
+            text-decoration: none;
+            color: $gray;
+            &:hover {
+                color: $white;
+            }
+        }
+        li {
+            list-style: none;
+        }
+        a, span {
+            display: block;
+            margin-left: 40px;
+        }
+        span {
+            font-style: italic;
+        }
+    }
+    .skills {
+        li {
+            list-style: none;
+        }
+    }
+}
+
+.right-column {
+    h1, h2 {
+        color: $rose;
+    }
+    h2::after {
+        background-color: $rose;
+    }
+    div {
+        width: 518px;
+        margin-bottom: 40px;
+    }
+    .name {
+        margin-top: 230px;
+        margin-bottom: 55px;
+        text-align: center;
+        h1 {
+            text-transform: uppercase;
+            font-size: 36px;
+            line-height: 0;
+        }
+        span {
+            font-style: italic;
+            font-size: 20px;
+        }
+    }
+    .about {
+        p {
+            padding: 0 20px;
+            word-wrap: break-word;
+        }
+    }
+    .education {
+        span, a {
+            display: block;
+            margin-left: 40px;
+            line-height: 30px;
+            color: $gray;
+        }
+        a:hover {
+            color: $gray-light;
+        }
+    }
+    .exp {
+        a {
+            color: $rose;
+            font-style: italic;
+            &:hover,
+            h2:hover {
+                color: lighten($color: $rose, $amount: 10%);
+            }
+        }
+        h2::after {
+            display: none;
+        }
+    }
+}
+
+.portfolio {
+    background: $white;
+    flex-direction: column;
+    .card {
+        display: flex;
+        margin: 20px;
+        .photo-container {
+            max-width: 45%;
+            overflow: hidden;
+            img {
+                max-width: 100%;
+            }
+        }
+        .description {
+            width: 55%;
+            margin-left: 20px;
+            h2 {
+                margin-top: 0;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: $gray;
+            font-weight: 700;
+            text-transform: lowercase;
+            display: block;
+            max-width: 70px;
+            border: 1px solid $rose;
+            border-radius: 30px;
+            background-color: $rose;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 30px;
+            letter-spacing: 0.03em;
+            &:hover {
+                color: $gray-light;
+            }
+        }
+    }
+    .lang:hover {
+        color: $gray-light;
+    }
+}
+.back {
+    a {
+        display: block;
+        max-width: 30%;
+        margin: 40px auto;
+        border: 1px solid $rose;
+        border-radius: 30px;
+        background-color: $rose;
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        &:hover {
+            color: $gray-light;
+        }
+    }
+}
+.lang {
+    background-color: transparent;
+    border: none;
+    color: $gray;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 10px 10px 0 auto;
+    &:hover {
+        color: $white;
+    }
+}

@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,200&display=swap");
+body {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #cecece7e), color-stop(50%, #b87d7e73));
+  background: linear-gradient(180deg, #cecece7e 50%, #b87d7e73 50%);
+}
+
+main {
+  max-width: 834px;
+  -webkit-box-shadow: -7px 7px 15px 9px rgba(71, 71, 71, 0.7);
+          box-shadow: -7px 7px 15px 9px rgba(71, 71, 71, 0.7);
+  border-radius: 20px;
+  margin: 0 auto;
+  background: url(./assets/back.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Titillium Web", sans-serif;
+  color: #636363;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 0.06em;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  background-color: #636363;
+  opacity: .5;
+  bottom: 0;
+  left: 20%;
+}
+
+.left-column div {
+  width: 316px;
+  margin-bottom: 40px;
+}
+
+.left-column img {
+  display: block;
+  margin: 130px auto 0;
+  max-width: 220px;
+  border-radius: 100%;
+  border: 2px solid #636363;
+}
+
+.left-column .contacts a {
+  text-decoration: none;
+  color: #636363;
+}
+
+.left-column .contacts a:hover {
+  color: #CECECE;
+}
+
+.left-column .contacts li {
+  list-style: none;
+}
+
+.left-column .contacts a, .left-column .contacts span {
+  display: block;
+  margin-left: 40px;
+}
+
+.left-column .contacts span {
+  font-style: italic;
+}
+
+.left-column .skills li {
+  list-style: none;
+}
+
+.right-column h1, .right-column h2 {
+  color: #B87D7E;
+}
+
+.right-column h2::after {
+  background-color: #B87D7E;
+}
+
+.right-column div {
+  width: 518px;
+  margin-bottom: 40px;
+}
+
+.right-column .name {
+  margin-top: 230px;
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.right-column .name h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 0;
+}
+
+.right-column .name span {
+  font-style: italic;
+  font-size: 20px;
+}
+
+.right-column .about p {
+  padding: 0 20px;
+  word-wrap: break-word;
+}
+
+.right-column .education span, .right-column .education a {
+  display: block;
+  margin-left: 40px;
+  line-height: 30px;
+  color: #636363;
+}
+
+.right-column .education a:hover {
+  color: #A8A8A8;
+}
+
+.right-column .exp a {
+  color: #B87D7E;
+  font-style: italic;
+}
+
+.right-column .exp a:hover,
+.right-column .exp a h2:hover {
+  color: #ca9e9f;
+}
+
+.right-column .exp h2::after {
+  display: none;
+}
+
+.portfolio {
+  background: #CECECE;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+}
+
+.portfolio .card .photo-container {
+  max-width: 45%;
+  overflow: hidden;
+}
+
+.portfolio .card .photo-container img {
+  max-width: 100%;
+}
+
+.portfolio .card .description {
+  width: 55%;
+  margin-left: 20px;
+}
+
+.portfolio .card .description h2 {
+  margin-top: 0;
+}
+
+.portfolio .card a {
+  text-decoration: none;
+  color: #636363;
+  font-weight: 700;
+  text-transform: lowercase;
+  display: block;
+  max-width: 70px;
+  border: 1px solid #B87D7E;
+  border-radius: 30px;
+  background-color: #B87D7E;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
+
+.portfolio .card a:hover {
+  color: #A8A8A8;
+}
+
+.portfolio .lang:hover {
+  color: #A8A8A8;
+}
+
+.back a {
+  display: block;
+  max-width: 30%;
+  margin: 40px auto;
+  border: 1px solid #B87D7E;
+  border-radius: 30px;
+  background-color: #B87D7E;
+  color: #CECECE;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+.back a:hover {
+  color: #A8A8A8;
+}
+
+.lang {
+  background-color: transparent;
+  border: none;
+  color: #636363;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  display: block;
+  margin: 10px 10px 0 auto;
+}
+
+.lang:hover {
+  color: #CECECE;
+}
+/*# sourceMappingURL=style.css.map */
