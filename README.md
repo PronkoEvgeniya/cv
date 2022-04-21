@@ -1,2 +1,2 @@
 
-https://PronkoEvgeniya.github.io/rsschool-cv/
+https://PronkoEvgeniya.github.io/cv/
